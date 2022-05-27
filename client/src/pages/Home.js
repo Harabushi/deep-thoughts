@@ -8,7 +8,6 @@ const Home = () => {
   const { loading, data } = useQuery(QUERY_THOUGHTS);
   // optional chaining like this may not work in node yet, although the modules may be outdated
   const thoughts = data?.thoughts || [];
-  console.log(thoughts);
 
   return (
     <main>
